@@ -21,6 +21,7 @@ class FaceDetection(Resource):
         element = parser.parse_args()
         image = element["images"]
         image.save("testing.jpg")
+        print(os.listdir())
         return 'hi there', 200
 
 api.add_resource(FaceDetection, '/')
