@@ -6,9 +6,9 @@ class Config():
     DEBUG = False
     TESTING = False
     ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
-    ALLOWED_HOST = ['*']
-    HOST = os.getenv("HOST")
-    PORT =  os.getenv("PORT", default=5000)
+    SERVER_NAME = "127.0.0.1"
+    PORT = os.environ.get("PORT")
+    
 
 
 
