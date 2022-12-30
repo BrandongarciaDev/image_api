@@ -5,4 +5,4 @@ from api import create_app
 app = create_app(os.getenv('CONFIG', 'development'))
 
 if __name__ in '__main__':
-    app.run(port=app.config['PORT'])
+    app.run(host='0.0.0.0', port=app.config['PORT'])
