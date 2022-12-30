@@ -8,7 +8,7 @@ class Config():
     ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
     ALLOWED_HOST = ['*']
     HOST = "imageapi-production-429b.up.railway.app"
-    port =  os.getenv("PORT", default=5000)
+    PORT =  os.getenv("PORT", default=5000)
 
 
 
